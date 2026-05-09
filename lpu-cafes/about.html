@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Best Cafes For Study In Phagwara</title>
+    <meta name="description" content="Learn more about our mission to help LPU students find the best student cafes near lpu, peaceful cafes in phagwara, and best cafes for study in phagwara.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f59e0b',
+                        secondary: '#ea580c',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased relative">
+    <div class="bg-glow top-0 left-0" style="background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, rgba(12, 10, 9, 0) 70%);"></div>
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center font-bold text-xl text-white shadow-lg">☕</div>
+                        <span class="font-bold text-xl tracking-tight text-white">LPU<span class="text-gradient">Cafes</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-stone-300 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="best-cafes.html" class="text-stone-300 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Best Cafes</a>
+                        <a href="budget-cafes.html" class="text-stone-300 hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Budget Cafes</a>
+                        <a href="about.html" class="text-white hover:text-amber-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-stone-400 hover:text-white hover:bg-stone-800 focus:outline-none">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden glass-nav border-t border-stone-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-stone-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="best-cafes.html" class="text-stone-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Best Cafes</a>
+                <a href="budget-cafes.html" class="text-stone-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Budget Cafes</a>
+                <a href="about.html" class="text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+        <div class="fade-in-up text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">About <span class="text-gradient">LPU Cafes</span></h1>
+            <p class="text-xl text-stone-400">Created by students, for students. Helping you find the best cafes for study in phagwara and peaceful student cafes near lpu.</p>
+        </div>
+
+        <div class="glass-card rounded-3xl p-8 md:p-12 fade-in-up mb-12">
+            <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
+            <p class="text-stone-300 mb-6 leading-relaxed">
+                As students ourselves, we know the struggle of finding a good cafe to study in. Some are too loud, some have terrible WiFi, and others are just too expensive for a daily visit.
+            </p>
+            <p class="text-stone-300 leading-relaxed">
+                We created this directory to filter out the noise. We personally visit and review cafes around LPU, specifically looking for fast WiFi, ample charging ports, peaceful environments, and student-friendly pricing.
+            </p>
+        </div>
+
+        <div class="glass-card rounded-3xl p-8 md:p-12 fade-in-up">
+            <h2 class="text-2xl font-bold mb-6">Contact Us / Suggest a Cafe</h2>
+            <p class="text-stone-400 mb-8">Found a hidden gem? Let us know and we'll add it to the directory!</p>
+            
+            <form class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-stone-300 mb-2">Name</label>
+                    <input type="text" id="name" class="w-full bg-stone-800/50 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors" placeholder="Your name">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-stone-300 mb-2">Email</label>
+                    <input type="email" id="email" class="w-full bg-stone-800/50 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors" placeholder="your@email.com">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-stone-300 mb-2">Cafe Details</label>
+                    <textarea id="message" rows="4" class="w-full bg-stone-800/50 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors" placeholder="Tell us about the cafe (Name, Location, Vibe, WiFi status...)"></textarea>
+                </div>
+                <button type="button" class="w-full btn-primary text-white font-bold py-3 px-4 rounded-lg transition-transform hover:scale-[1.02]">
+                    Submit Suggestion
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/50 border-t border-stone-800 pt-8 pb-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-stone-500 text-sm">© 2026 LPU Cafes Directory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
